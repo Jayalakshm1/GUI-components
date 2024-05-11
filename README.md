@@ -1,15 +1,8 @@
 # Ex.No: 1 To develop an application that uses GUI Components with Fonts and Colors. 
-Note: Create button for colors and fonts while clicking color or font button should change 
-
-
 ## AIM:
-
 To create an application that uses GUI Components with Fonts and Colors using Android Studio.
-
 ## EQUIPMENTS REQUIRED:
-
 Latest Version Android Studio
-
 ## ALGORITHM:
 ```
 1.Start a new project in Android Studio.
@@ -19,9 +12,8 @@ Latest Version Android Studio
 5.Display corresponding changes in application.  
 ```
 ## PROGRAM:
+## activity_main.xml
 ```
-activity_main.xml
-
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -29,7 +21,6 @@ activity_main.xml
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -43,7 +34,6 @@ activity_main.xml
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.207" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -55,7 +45,6 @@ activity_main.xml
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -67,11 +56,10 @@ activity_main.xml
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-MainActivity.java
-
+```
+## MainActivity.java
+```
 package com.example.guicomponents;
 import android.graphics.Color;
 import androidx.appcompat.app.AppCompatActivity;
@@ -83,8 +71,6 @@ public class MainActivity extends AppCompatActivity
 {
     int ch=1;
     float font=30;
-
-
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -131,16 +117,10 @@ public class MainActivity extends AppCompatActivity
         });
     }
 }
-
 ```
 ## OUTPUT
-
 ![pic1](https://github.com/Jayalakshm1/GUI-components/assets/130430542/59ac09de-8237-498a-938e-228774b5ea2e)
 ![pic2](https://github.com/Jayalakshm1/GUI-components/assets/130430542/a01c295a-8e46-4c25-85d8-bde67fccc165)
-
-
-
-
 ## RESULT
 Thus a Simple Android Application that uses GUI Components with Fonts and Colors using Android Studio is developed and executed successfully.
 
